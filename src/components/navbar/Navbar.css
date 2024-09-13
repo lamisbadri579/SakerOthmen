@@ -1,0 +1,426 @@
+
+.navbar{
+    max-width: 100vw;
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    
+    height: 96.44px;
+    background-color: #121A44;
+}
+.navbar-list {
+    margin-left: 10rem;
+    gap: 7rem;
+    cursor: pointer;
+    align-items: center;    
+    list-style-type:none;
+    display: flex;
+     
+    font-size: var(--p1);
+   
+}
+.navbar-list li a{
+    text-decoration: none;
+    color: white;
+}
+.navbar-list li a:hover{
+    color: var(--primary-blue-light1);
+    transform: scale(1.03);
+    transition: 0.2s ease-in-out;
+    
+}
+.logo{
+   margin-left: 2rem;
+    width: 15rem;
+    height: 6rem;
+    cursor: pointer;   
+}
+
+.navbar .login{
+    margin-left: 8rem;
+    background-color: var(--primary-blue);
+    width: 139px;
+    height: 40px;
+    font-size: var(--text1);
+    font-weight: 600;
+    border-radius: 90px;
+    border: none;
+    cursor: pointer;
+    font-family: poppins;
+   
+}
+
+.navbar .login:hover{
+    background-color:hsl(230, 58%, 37%);
+    box-shadow: 1px 1px 20px -5px black; 
+    transition: 0.3s ease-in-out;
+}
+
+.navbar .login a{
+    color: white;
+    text-decoration: none;
+    
+}
+
+
+@media (min-width: 300px) {
+  .navbar{
+    display: flex;
+    flex-wrap: wrap;
+  
+    align-items: center;
+  }
+    .navbar a  {
+      font-size: 0.6rem;
+    }
+    .navbar-list{
+       
+      display: flex;
+      margin-left: 0.8rem;
+       gap: 2.5rem;
+    }
+  
+    .logo{
+       margin-left: 0;
+        width:9rem;
+        height: 1.5rem;
+    }
+    .navbar .login{
+        position: absolute;
+       
+        transform: translate(330%,-210%);
+        width: 4rem;
+        height: 1.4rem;
+        margin-left: 0;
+        font-size:0.6rem;
+    }
+
+   
+  }
+  
+  @media (min-width: 1500px) {
+    .navbar{
+      display: flex;
+      align-items: center;
+    }
+      .navbar .navbar-list a  {
+        font-size: var(--p1);
+      }
+      .navbar-list{
+        margin-left: 8rem;
+        gap: 7rem;
+        display: flex;
+      }
+    
+      .logo{
+        margin-left: 2rem;
+        width: 18rem;
+        height: 6rem;
+      }
+      .navbar .login {
+          position: relative;
+          transform: translate(0%,0%);
+          margin-left: 8rem;
+          background-color: var(--primary-blue);
+          width: 139px;
+          height: 40px;
+         
+      }
+      .navbar .login a{
+        font-size: 1rem;
+      }
+  
+     
+    }
+
+  /*@media (min-width: 640px) {
+    
+     
+        .navbar  a  {
+            font-size: 0.9rem;
+          }
+          .navbar .login a{
+            font-size: 0.7rem;
+          }
+          .navbar-list{
+              margin-left: -5rem;
+              gap: 1.2rem;
+          }
+          .logo{
+              width:10rem;
+              height: 5rem;
+              margin-left: 5%;
+          }
+          .navbar .login{
+              width: 5rem;
+              height: 1.7rem;
+              
+          }
+        }
+    
+  
+  
+  
+  @media (min-width: 768px) {
+    .navbar  a  {
+        font-size: 1rem;
+      }
+      .navbar .login a{
+        font-size: 0.8rem;
+      }
+      .navbar-list{
+          margin-left: -3rem;
+          gap: 1.5rem;
+      }
+      .logo{
+          width:11rem;
+          height: 5rem;
+          margin-left: 5%;
+      }
+      .navbar .login{
+          width: 5rem;
+          height: 1.7rem;
+          margin-left: 2.5rem;
+      }
+  }
+  
+
+ 
+  
+
+  @media (min-width: 1280px) {
+    .navbar  a  {
+        font-size: 1.3rem;
+      }
+      .navbar .login a{
+        font-size: 1.2rem;
+      }
+      .navbar-list{
+          margin-left: 2rem;
+          gap: 3rem;
+      }
+      .logo{
+          width:17rem;
+          height: 5rem;
+          margin-left: 7%;
+      }
+      .navbar .login{
+          width: 8rem;
+          height: 2.5rem;
+          margin-left: 6rem;
+      }
+  }
+  
+
+  @media (min-width: 1536px) {
+    .navbar  a  {
+        font-size: 1.5rem;
+      }
+      .navbar .login a{
+        font-size: 1.2rem;
+      }
+      .navbar-list{
+          margin-left: 2rem;
+          gap: 4rem;
+      }
+      .logo{
+          width:20rem;
+          height: 5rem;
+          margin-left: 7%;
+      }
+      .navbar .login{
+          width: 10rem;
+          height: 3rem;
+          margin-left: 4.5rem;
+      }
+  }
+
+ 
+  @media (max-width: 2000px) {
+    .navbar{
+        height: 150px;
+    }
+    .navbar  a  {
+        font-size: 2rem;
+      }
+      .navbar .login a{
+        font-size: 1.5rem;
+      }
+      .navbar-list{
+          margin-left: 2rem;
+          gap: 5rem;
+      }
+      .logo{
+          width:20rem;
+          height: 8rem;
+          margin-left: 7%;
+      }
+      .navbar .login{
+          width: 12rem;
+          height: 4rem;
+          margin-left: 7rem;
+      }
+  }
+  @media (max-width: 1700px) {
+    .navbar{
+        height: 140px;
+    }
+    .navbar  a  {
+        font-size: 1.5rem;
+      }
+      .navbar .login a{
+        font-size: 1.2rem;
+      }
+      .navbar-list{
+          margin-left: 2rem;
+          gap: 5rem;
+      }
+      .logo{
+          width:20rem;
+          height: 7rem;
+          margin-left: 7%;
+      }
+      .navbar .login{
+          width: 10rem;
+          height: 3rem;
+          margin-left: 7rem;
+      }
+  }
+@media (max-width: 1536px) {
+    .navbar{
+        height: 96.44px;
+    }
+    .navbar  a  {
+        font-size: 1.5rem;
+      }
+      .navbar .login a{
+        font-size: 1.2rem;
+      }
+      .navbar-list{
+          margin-left: 2rem;
+          gap: 4rem;
+      }
+      .logo{
+          width:20rem;
+          height: 5rem;
+          margin-left: 7%;
+      }
+      .navbar .login{
+          width: 10rem;
+          height: 3rem;
+          margin-left: 4.5rem;
+      }
+  }
+  
+
+  @media (max-width: 1280px) {
+    .navbar{
+        height: 96.44px;
+    }
+    .navbar  a  {
+        font-size: 1.3rem;
+      }
+      .navbar .login a{
+        font-size: 1.1rem;
+      }
+      .navbar-list{
+          margin-left: 1rem;
+          gap: 3rem;
+      }
+      .logo{
+          width:17rem;
+          height: 5rem;
+          margin-left: 7%;
+      }
+      .navbar .login{
+          width: 9rem;
+          height: 2.5rem;
+          margin-left: 4.5rem;
+      }
+    
+  }
+  
+ 
+  @media (max-width: 1024px) {
+    .navbar{
+        height: 96.44px;
+    }
+    .navbar  a  {
+        font-size: 1.2rem;
+      }
+      .navbar .login a{
+        font-size: 1rem;
+      }
+      .navbar-list{
+          margin-left: 0rem;
+          gap: 2rem;
+      }
+      .logo{
+          width:15rem;
+          height: 5rem;
+          margin-left: 7%;
+      }
+      .navbar .login{
+          width: 6.5rem;
+          height: 2.5rem;
+          margin-left: 3.3rem;
+      }
+  }
+  
+  @media (max-width: 850px) {
+    .navbar  a  {
+        font-size: 1rem;
+      }
+      .navbar .login a{
+        font-size: 0.9rem;
+      }
+      .navbar-list{
+          margin-left: -4rem;
+          gap: 1.5rem;
+      }
+      .logo{
+          width:15rem;
+          height: 5rem;
+          margin-left: 7%;
+      }
+      .navbar .login{
+          width: 5.5rem;
+          height: 2rem;
+          margin-left: -0.1rem;
+      }
+  }
+
+ 
+  @media (max-width: 768px) {
+    .navbar  a  {
+        font-size: 1rem;
+      }
+      .navbar .login a{
+        font-size: 0.8rem;
+      }
+      .navbar-list{
+          margin-left: -4rem;
+          gap: 1.5rem;
+      }
+      .logo{
+          width:11rem;
+          height: 5rem;
+          margin-left: 5%;
+      }
+      .navbar .login{
+          width: 5rem;
+          height: 1.7rem;
+          margin-left: 2rem;
+      }
+  }
+  
+
+ 
+
+ 
+ 
+  

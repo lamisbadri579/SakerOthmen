@@ -1,0 +1,27 @@
+.products{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.products h1{
+    color: var(--primary-blue-dark2);
+    font-size:7rem ;
+    font-weight: 500;
+}
+@media (min-width:300px){
+    .products{
+        height: 60vh;
+    }
+    .products h1{
+        font-size: 2rem;
+    }
+}
+@media (min-width:1500px){
+    .products{
+        height: 80vh;
+    }
+    .products h1{
+        font-size: 7rem;
+    }
+}

@@ -1,0 +1,17 @@
+
+
+  
+  body {
+    
+    background: linear-gradient(-44deg, var(--primary-blue-light2), var(--primary-blue-light1));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+     
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
