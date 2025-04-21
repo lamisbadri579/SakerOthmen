@@ -1,0 +1,48 @@
+[33mcommit 3c581472d8c3f683f455381c1daa0c4723b9e01f[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mgh-pages[m[33m)[m
+Merge: c276342 3164476
+Author: lamis2004 <lamisbadri579@gmail.com>
+Date:   Mon Apr 21 04:15:49 2025 +0200
+
+    second commit
+
+[33mcommit c2763422859beeb823e5b45e0abea2d5d4828196[m
+Author: lamis2004 <lamisbadri579@gmail.com>
+Date:   Mon Apr 21 04:10:08 2025 +0200
+
+    Initial commit for the SakerOthmen repo
+
+[33mcommit 31644768ec9658804cee488ead4881925cce622c[m[33m ([m[1;31msaker/main[m[33m)[m
+Author: lamisbadri579 <lamisbadri579@gmail.com>
+Date:   Mon Apr 21 04:04:38 2025 +0200
+
+    Initial commit
+
+[33mcommit 03eaf864d516ad784878ab8146a0ab539b27a38c[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m
+Author: lamis2004 <lamisbadri579@gmail.com>
+Date:   Fri Sep 13 23:48:40 2024 +0200
+
+    Add .nojekyll file to bypass Jekyll
+
+[33mcommit 74e81ae2159107d6ac54a5cae499a55bca9aecd2[m
+Author: lamis2004 <lamisbadri579@gmail.com>
+Date:   Fri Sep 13 21:34:24 2024 +0200
+
+    Updated deploy script in package.json
+
+[33mcommit 2f8458361e1bf80f460ea39f5cfdfd6c49136e77[m
+Author: lamis2004 <lamisbadri579@gmail.com>
+Date:   Fri Sep 13 21:28:44 2024 +0200
+
+    Updated Footer.css and Navbar.css
+
+[33mcommit f551472d74f07aac54bcadf9b92c491a0082512f[m
+Author: lamis2004 <lamisbadri579@gmail.com>
+Date:   Fri Sep 13 21:12:23 2024 +0200
+
+    Updated package.json and Landing.css
+
+[33mcommit 4213003b8412f15babe353444f150d110491d611[m
+Author: lamis2004 <lamisbadri579@gmail.com>
+Date:   Fri Sep 13 20:37:30 2024 +0200
+
+    first commit
