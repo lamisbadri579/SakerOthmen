@@ -1,6 +1,6 @@
 import Login from "./pages/login/Login.jsx"
 import Contact from "./pages/contact/Contact.jsx"
-import { BrowserRouter as Router, Route, Routes, Link, BrowserRouter } from 'react-router-dom';
+import { BrowserRouter , Route, Routes} from 'react-router-dom';
 import Navbar from './components/navbar/Navbar.jsx'
 import Footer from "./components/footer/Footer.jsx";
 import Landing from "./pages/landing/Landing.jsx";

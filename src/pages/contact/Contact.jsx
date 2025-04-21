@@ -135,6 +135,8 @@ const Contact = () => {
       <div className="address-container">
         <h1>DROP IN OUR OFFICE</h1>
 
+        <div>
+
         <div className='location'>
           <div className='location-title'>
             <img src={location} alt="location_icon" />
@@ -146,7 +148,7 @@ const Contact = () => {
         <div className='phone-number'>
           <div className='phone-number-title'>
             <img src={phone_icon} alt="phone_icon" />
-            <h3>Let's Talk</h3>
+            <h3>Let&apos;s Talk</h3>
           </div>
           <div className='phone-number-content'>+1 555 123 4567</div>
         </div>
@@ -157,6 +159,8 @@ const Contact = () => {
             <h3>General Support</h3>
           </div>
           <div className='email-address-content'>contact@example.com</div>
+        </div>
+
         </div>
       </div>
     </div>

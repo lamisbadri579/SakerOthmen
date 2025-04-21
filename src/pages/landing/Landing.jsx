@@ -1,4 +1,3 @@
-import React from 'react'
 import './Landing.css'
 import img1 from '../../assets/visuals/img1.jpg'
 import increase_icon from '../../assets/icons/increase-icon.svg'
@@ -73,7 +72,7 @@ const Landing = () => {
               <img src={line} alt="" />
               <h6>GET STARTED</h6>
             </div>
-            <h3>Unlock New Possibilities:Discover 
+            <h3>Unlock New Possibilities: Discover 
                 How We Can Help You Achieve More 
                 in Global Business
             </h3>
@@ -98,7 +97,7 @@ const Landing = () => {
               <img src={line} alt="" />
               <h6>GET STARTED</h6>
             </div>
-            <h3>Unlock New Possibilities:Discover 
+            <h3>Unlock New Possibilities: Discover 
                 How We Can Help You Achieve More 
                 in Global Business
             </h3>
@@ -121,7 +120,7 @@ const Landing = () => {
               <img src={line} alt="" />
               <h6>GET STARTED</h6>
             </div>
-            <h3>Unlock New Possibilities:Discover 
+            <h3>Unlock New Possibilities: Discover 
                 How We Can Help You Achieve More 
                 in Global Business
             </h3>
@@ -148,7 +147,7 @@ const Landing = () => {
 
           <div className='comment-and-arrows'>
           <img src={arrow_left} alt="" className='arrow-left' />
-          <p>Thanks to the company’s global network and reliable service, my business has experienced significant growth. Their support has been invaluable.</p>
+          <p>Thanks to the company&apos;s global network and reliable service, my business has experienced significant growth. Their support has been invaluable.</p>
           <img src={arrow_right} alt=""  className='arrow-right'/>
           </div>
 

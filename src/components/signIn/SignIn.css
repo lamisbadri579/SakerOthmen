@@ -5,16 +5,14 @@
   justify-content: center;  
   align-items: center;      
   text-align: center;
- padding-top: 3%;
- padding-bottom: 6%;
-  
+ 
+
    
 }
+
 .signin-container{
-   position: relative;
+   
    background-color: rgba(255, 255, 255, 0.25);
-   width: 498px;
-   height: 479px;
    padding: 40px;
    border-radius: 38px;
    box-shadow: 50px 50px 5px -3px rgba(0, 0, 0, 0.25);
@@ -31,19 +29,17 @@ font-size: var(--h3);
     margin-bottom: 30px;
 }
 .signin-container .email,.signin-container .password{
- 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
+    
 }
 
 .signin-container .email img{
     position: absolute;
-    margin-left: -52%;
-   
+    
 }
 
 .signin-container .email input{
+    
     font-size: var(--p2);
     font-family: poppins;
     border: 1px solid black;
@@ -65,15 +61,19 @@ font-size: var(--h3);
     border-radius: 90px;
     background-color: rgba(161, 173, 230, 0.6);
     font-size: var(--p3);
+    
 }
 .signin-container .password img{
     position: absolute;
-    margin-right: -52%;
+   
+   right: 0%;
 }
 .email{
     margin-bottom: 30px;
+   
 }
 .password{
+    
     margin-bottom: 30px;
 }
 
@@ -200,6 +200,10 @@ input[type="checkbox"]:checked:before {
   }
 
   @media (min-width:300px){
+    
+    .signin{
+        height: 80vh;
+    }
 
   .signin-container{
      
@@ -224,17 +228,19 @@ input[type="checkbox"]:checked:before {
   
   .signin-container .email img{
       height: 2rem;
-      margin-left: -61%;
+     
   }
-  
+  .signin-container .email,.signin-container .password{
+    width: 100%;
+  }
   .signin-container .email input,.signin-container .password input{
-      width: 13rem;
+      width: 100%;
       height: 2rem;
   }
  
   .signin-container .password img{
       height: 2rem;
-      margin-right: -61%;
+      
   }
   .email{
       margin-bottom: 1rem;
@@ -242,18 +248,11 @@ input[type="checkbox"]:checked:before {
   .password{
       margin-bottom: 1rem;
   }
-  
-  .signin-container .email input::placeholder{
-      transform: translate(18%);
-  }
-  
-  .signin-container .password input::placeholder{
-      transform: translate(5%);
-  }
+ 
   
   .login-button{
 
-    width: 13rem;
+    width: 100%;
     height: 2rem;
     margin-bottom: 1rem;
     font-size: 0.8rem;
@@ -272,14 +271,20 @@ input[type="checkbox"]:checked:before {
   
   }
 
-  @media (min-width:1500px){
+ 
+
+  @media (min-width:700px){
+
+    .signin{
+        height: 100vh;
+    }
     
       .signin-container{
          width: 498px;
          height: 479px;
          padding: 40px;
-         border-radius: 38px;
-         box-shadow: 50px 50px 5px -3px rgba(0, 0, 0, 0.25);
+         
+        
       }
       .signin-container .title{
         margin-bottom: 30px;
@@ -291,21 +296,21 @@ input[type="checkbox"]:checked:before {
       }
       .signin-container .email img{
          height: 40px;
-          margin-left: -52%;
+         
       }
       .signin-container .email input{
           font-size: var(--p3);
-          width: 298px;
+         
           height: 40px;
       }
       .signin-container .password input{
           font-size: var(--p3);
-          width: 298px;
+          
           height: 40px;
       }
       .signin-container .password img{
           height: 40px;
-          margin-right: -52%;
+          
       }
       .email{
           margin-bottom: 30px;
@@ -323,14 +328,14 @@ input[type="checkbox"]:checked:before {
       }
       
       .login-button{
-          width: 298px;
+         
           height: 40px;
           margin-bottom: 30px;
           font-size: var(--h6);
       }
       
       .remember .remember-forgotpassword{
-          gap: 50px;
+          gap: 130px;
           font-size: var(--p3);
       }
    

@@ -1,22 +1,26 @@
 
 .hero-section{
+  padding-top: 30px;
     background: linear-gradient(-44deg,var(--primary-blue-light2),var(--primary-blue-light1));
-    height: 115vh;
+    
 }
 .hero{
     display: flex;
     justify-content: center;
-    height: 90vh;
+    
+    
 }
 .hero-container .visuals img{
   border-radius: 4px;
-    height: 481px;
+
+   
 }
 .hero-container{
-  gap: 5rem;
-  width: 90%;
+  gap: 20px;
+  
   display: flex;
   align-items: center;
+  
 }
 .hero-container .content h1{
     font-size: var(--h1);
@@ -69,6 +73,8 @@
     align-items: center;
     gap: 3rem;  
     width: 90%; 
+    
+    
 }
 .landing .benefits .benefit1,.landing .benefits .benefit2,.landing .benefits .benefit3{
     text-align: center;
@@ -76,6 +82,8 @@
    display: grid;
    place-items: center; 
    padding: 2%;
+  
+  
   
 }
 .landing .benefits h5{
@@ -103,12 +111,11 @@ margin-top: 10px;
     background-color: var(--primary-blue-dark2);
     margin-top: 3%;
     padding: 40px;
-    gap: 10rem;
+  
+    
 }
-.features .image{
-  border-radius: 4px;
- width: 45rem;
-}
+
+
 .landing .getstarted,.landing .readmore{
     color: var(--primary-blue-light1);
     font-weight: bold;
@@ -141,14 +148,16 @@ margin-top: 10px;
 
 .clients-opinion{
   margin-top: 3%;
-    width: 60%;
+    
     padding-top: 3%;
     padding-bottom: 3%;
     background-color: var(--primary-blue-light2);
     border-radius: 20px;
+    display: flex;
     justify-content: center;
-    place-items: center;
-    display: grid;
+    flex-direction: column;
+    align-items: center;
+    
 }
 .clients-opinion-container{
   padding-top: 3%;
@@ -202,21 +211,39 @@ margin-top: 10px;
 
 
 @media (min-width: 300px) {
+  
+  
+  .hero-section{
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .hero{
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
 
   .hero-container .visuals img{
-    width: 18rem;
-    height: 13rem;  
+   width: 100%;
   }
 .hero-container{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.hero-container .content{
-  margin-left: 0.5rem;
+ 
   display: flex;
   flex-direction: column;
-  width: 100%;
+
+
+}
+.hero-container .content{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
 }
 .hero-container .content h1{
   font-size: 1rem;
@@ -236,6 +263,8 @@ margin-top: 10px;
   font-size: 0.55rem;
   gap: 0.9rem;
   height: 3rem;
+  display: flex;
+  justify-content: space-around;
 }
 .landing{
   padding-bottom: 5%;
@@ -247,9 +276,8 @@ margin-top: 10px;
 }
 .benefits{
   row-gap: 1rem;
-  width: 90%;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   width: 100%;
 }
 .benefit1,.benefit2,.benefit3{
@@ -269,23 +297,23 @@ margin-top: 10px;
 }
 .landing .features .feature1,.landing .features .feature2,.landing .features .feature3{
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   row-gap: 1rem;
+  
 }
 .landing .features h3{
   font-size: 0.7rem;
-  width: 15rem;
+  
 }
 .landing .features .image{
-  width: 18rem;
-    height: 13rem; 
+width: 100%;
 }
 .landing .features ul li{
   font-size: 0.6rem;
 }
-.landing .features .text{
-  width: 20rem;
-}
+
 .getstarted img{
   width: 2rem;
 }
@@ -296,11 +324,10 @@ margin-top: 10px;
   font-size: 0.5rem;
 }
 .clients-opinion{
-  height:20rem;
   width: 90%;
 }
 .clients-opinion-container{
-  width: 80%;
+  width: 13rem;
 }
 .clients-opinion h4{
   font-size: 1rem;
@@ -327,37 +354,273 @@ margin-top: 10px;
 
 }
 
-@media (min-width: 1500px) {
+@media (min-width:475px) {
+  .hero-container .content h1{
+    font-size: 1.4rem;
+  }
+
+  .hero-container .content p{
+    
+    font-size: 1rem;
+  }
+
+  .hero-container .content button{
+    font-size: 0.8rem;
+    width: 8rem;
+    height: 2rem;
+  }
+  .associated-companies{
+    font-size: 0.8rem;
+  }
+  .features .text h3{
+    font-size: 0.8rem;
+  }
+  .features .text ul li {
+    font-size: 0.7rem;
+  }
+  .getstarted h6,.readmore h6{
+    font-size: 0.6rem;
+  }
+  
+  
+}
+
+@media (min-width:600px){
+  .visuals{
+    width: 90%;
+  }
+  .landing .benefits{
+    width: 80%;
+  }
+ 
+
+  .features .text h3{
+    font-size: 1rem;
+  }
+  .features .text ul li {
+    font-size: 0.8rem;
+  }
+
+  .clients-opinion-container{
+    width: 15rem;
+  }
+ 
+
+}
+@media (min-width:768px){
+
+  .hero-section{
+    gap: 2rem;
+  }
+  .visuals{
+    width: 80%;
+  }
+  .hero-container .content h1{
+    font-size: 1.7rem;
+  }
+
+  .hero-container .content p{
+    
+    font-size: 1.2rem;
+  }
+
+  .hero-container .content button{
+    font-size: 0.9rem;
+    width: 9rem;
+    height: 3rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .landing .benefits{
+    width: 70%;
+  }
+  .landing .choose{
+    font-size: 1rem;
+  }
+
+  .landing .features .feature1,.landing .features .feature2,.landing .features .feature3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .landing .features .image{
+    width:50%;
+  }
+  .landing .features .text{
+    width: 50%;
+  }
+ .clients-opinion{
+  width: 70%;
+ }
+
+ .landing .benefits{
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+ 
+}
+.landing .benefits .benefit1,.landing .benefits .benefit2,.landing .benefits .benefit3{
+  
+  height: 150px;
+}
+
+}
+
+@media (min-width:900px){
+  .visuals{
+    width: 70%;
+  }
+  
+  .landing .choose{
+    font-size: 1.2rem;
+  }
+
+  .landing .benefits h5{
+    font-size: 0.8rem;
+  }
+  .landing .benefits p{
+    font-size: 0.6rem;
+  }
+ 
+
+ .clients-opinion-container{
+  width: 17rem;
+}
+
+.clients-opinion h4{
+  font-size: 1.2rem;
+}
+.clients-opinion h5{
+  font-size: 1rem;
+}
+.clients-opinion-container p{
+  font-size: 0.8rem;
+}
+
+}
+
+@media (min-width:1024px){
+  .hero-section{
+    
+    min-height: 90vh;
+    gap: 3rem;
+  }
+  .hero-container{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 95%;
+  }
+
+  .associated-companies{
+    height: 5rem;
+    font-size: 1rem;
+  }
+
+
+  .visuals{
+    width: 100%;
+  }
+
+  
+  .landing .benefits h5{
+    font-size: 1rem;
+  }
+  .landing .benefits p{
+    font-size: 0.8rem;
+  }
+  .landing .choose{
+    font-size: 1.5rem;
+    
+  }
+
+  .landing .benefits .benefit1,.landing .benefits .benefit2,.landing .benefits .benefit3{
+
+    height: 200px;
+   
+ }
+
+ .features .text h3{
+  font-size: 1.2rem;
+}
+.features .text ul li {
+  font-size: 1rem;
+}
+.getstarted h6,.readmore h6{
+  font-size: 0.9rem;
+}
+.clients-opinion-container{
+  width: 20rem;
+}
+
+ 
+}
+
+@media (min-width:1200px){
+  .hero-section{
+    gap: 2rem;
+  }
+
+  .hero-container .content h1{
+    font-size: 2rem;
+  }
+
+  .hero-container .content p{
+    
+    font-size: 1.3rem;
+  }
+  .clients-opinion{
+    width: 60%;
+  }
+
+
+}
+
+@media (min-width:1330px){
+  .hero-section{
+    gap: 1rem;
+  }
+
+  .hero-container .content h1{
+    font-size: 2rem;
+    margin-bottom: 50px;
+  }
+
+  .hero-container .content p{
+    
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+  }
+  
+
+}
+
+@media (min-width: 1440px) {
   
 .hero-section{
-  height: 115vh;
+  height: 100vh;
 }
-.hero{
-  display: flex;
-  justify-content: center;
-  height: 90vh;
-}
-  .hero-container .visuals img{
-   width: 35rem;
-   height: 30rem;
-  }
-.hero-container{
-  display: flex;
-  align-items: center;
-}
+
+ 
+
 .hero-container .content h1{
   font-size: var(--h1);
   margin-bottom: 40px;
 }
 .hero-container .content p{
-  margin-bottom: 40px;
+  
   font-size: var(--p1);
   color: var(--primary-blue-dark2);
 }
 .hero-container .content{
   display: flex;
   flex-direction: column;
-  width: 50%;
+ 
 }
 .hero-container .content button{
   width: 11rem;
@@ -366,7 +629,6 @@ margin-top: 10px;
   }
   
 .associated-companies{
-  gap: 13rem;
   height: 7rem;
   font-size: var(--h4);
 }
@@ -397,29 +659,17 @@ margin-top: 10px;
   margin-bottom: 3%;
 }
 
-.landing .features .feature1,.landing .features .feature2,.landing .features .feature3{
-  display: flex;
-  align-items: center;
-  gap: 10rem;
-  
-}
+
 
 .landing .features h3{
   font-size: var(--h3);
   width: 60%;
 }
-.landing .features .image{
-  width: 30rem;
-  height: 25rem;
-}
+
 .landing .features ul li{
   font-size: var(--p1);
 }
 
-.landing .features .text{
- 
-  width: 50%;
-}
 .getstarted img{
   width: 4rem;
 }
@@ -431,7 +681,7 @@ margin-top: 10px;
 }
 
 .clients-opinion{
-  height: 40rem;
+  
   margin-top: 3%;
   width: 70%;
 }
@@ -453,7 +703,7 @@ margin-top: 10px;
   font-size: var(--h5);
 }
 .clients-opinion-container p{
-  font-size: var(--p1);
+  font-size: 1rem;
 }
 .clients-opinion-container .profile-picture{
   width: 5rem;
@@ -464,6 +714,13 @@ margin-top: 10px;
 }
 .arrow-left,.arrow-right{
   height: 3rem;
+}
+
+.landing .benefits .benefit1,.landing .benefits .benefit2,.landing .benefits .benefit3{
+  
+  height: 300px;
+ 
+ 
 }
 
 

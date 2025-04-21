@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import './Footer.css'
 import facebook from '../../assets/icons/facebook.svg'
 import twitter from '../../assets/icons/twitter.svg'

@@ -1,16 +1,17 @@
 .footer{
     background-color: var(--primary-blue-dark2);
     display: flex;
-    align-items: center;
+    padding: 20px;
+    padding-bottom: 5px;
     width: 100%;
-    height: 252px;
+    flex-direction: column;
     position: relative;
-    
+    gap: 1rem;
 }
  .footer-sections{
-    margin-left: 2rem;
+    
     display: flex;
-    gap: 11rem;
+   
 }
 .title-section{
     color: white;
@@ -35,13 +36,13 @@
 .copyright {
     width: 100%;
   color: white;
-  margin-top: 213px;
+  
   text-align: center; 
-  position: absolute; 
+  
   align-items: center;
 opacity: 30%;
-left: 50%;
-transform: translateX(-50%);
+
+
 }
 .copyright p{
     font-size: var(--p5);
@@ -123,15 +124,19 @@ transform: translateX(-50%);
 
 
 @media (min-width: 300px) {
-    
+
+    .footer{
+        padding: 10px;
+        padding-bottom: 5px;
+    }
     .footer-sections {
-        margin-left: 3%;
         
+        width: 100%;
         row-gap: 1rem;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        justify-content: center; 
+        
     }
     .footer-sections div ul li{
         margin-top: 0;
@@ -173,6 +178,7 @@ transform: translateX(-50%);
     } 
     .legal{
         display: flex;
+        align-items: center;
     }
     .legal ul{
         margin-left: 0.8rem;
@@ -186,7 +192,7 @@ transform: translateX(-50%);
     }
     .subscribe input{
         font-family: poppins;
-        width: 15rem;
+        width: 17rem;
         height:1.5rem;
         font-size: 0.8rem;
     }
@@ -203,22 +209,89 @@ transform: translateX(-50%);
         font-size: 0.5rem;
     }
   }
-  @media (min-width:1500px){
 
+  @media (min-width:425px){
+    .footer-sections{
+        padding: 10px;
+    }
+    .subscribe input{
+        height: 2rem;
+        width: 20rem;
+    }
+    .subscribe button{
+        height: 2rem;
+        width: 6rem;
+        font-size: 0.6rem;
+    }
+    .follow .socialmedia{
+        margin-left: 1.5rem;
+        gap: 1.5rem;
+    }
+
+    .legal ul{
+        margin-left: 1.5rem;
+        gap: 1.5rem;
+        
+    }
+    .useful-links ul{
+        margin-left: 1.5rem;
+        gap: 1.5rem;
+    }
+  }
+
+  @media (min-width:600px){
+    .footer-sections .title-section {
+        
+        font-size: 0.9rem;
+      }
+
+    .useful-links ul li ,.legal ul li{
+        font-size: 0.7rem;
+    }
+  }
+
+  @media (min-width:900px){
     
+    
+    .follow .socialmedia{
+        margin-left: 0rem;
+        gap: 0.8rem;
+    }
+  
     .footer-sections {
         display: flex;
         flex-direction: row;
-        gap: 11rem;
-    }
-    
-    .follow,.useful-links,.legal,.useful-links ul,.legal ul{
-        display: inline;
+        padding-inline: 20px;
+        justify-content: space-between;
+        width: 90%;
        
     }
-    .useful-links .title-section,.legal .title-section{
-        margin-bottom: -1rem;
+    .follow,.useful-links,.legal,.useful-links ul,.legal ul{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 0;
+        gap: 0.5rem;
     }
+    .footer-sections .title-section {
+        
+        font-size: 1rem;
+      }
+
+    .useful-links ul li ,.legal ul li{
+        font-size: 0.8rem;
+    }
+    
+ 
+  }
+
+
+
+
+  @media (min-width:1440px){
+
+    
+  
     .follow .socialmedia{
         margin-left: 0;
         margin-top: 1rem;
@@ -234,9 +307,7 @@ transform: translateX(-50%);
     .footer-sections div ul li{
         font-size: var(--p4);
     }
-    .footer-sections div ul li{
-        margin-top: 1rem;
-    }
+  
 
     .subscribe input{
         margin-top: 1rem;

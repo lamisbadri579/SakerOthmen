@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './SignIn.css';
 import user from '../../assets/icons/user.svg';
 import email_icon from '../../assets/icons/email.svg';
@@ -36,6 +36,7 @@ const SignIn = () => {
 
   return (
     <div className='signin'>
+      <div className='signin-content'>
       <div className='signin-container'>
         <h1 className='title'>Sign In</h1>
 
@@ -81,6 +82,7 @@ const SignIn = () => {
             </div>
           </div>
         </form>
+      </div>
       </div>
     </div>
   );

@@ -6,8 +6,8 @@
 }
 .services-page h1{
     color: var(--primary-blue-dark2);
-    font-size:7rem ;
-    font-weight: 500;
+  
+    font-weight: bold;
 }
 @media (min-width:300px){
     .services-page{
@@ -17,11 +17,16 @@
         font-size: 2rem;
     }
 }
-@media (min-width:1500px){
+@media (min-width:500px){
+    .services-page h1{
+        font-size: 3rem;
+    }
+}
+@media (min-width:1440px){
     .services-page{
         height: 80vh;
     }
     .services-page h1{
-        font-size: 7rem;
+        font-size: 5rem;
     }
 }
