@@ -3,9 +3,9 @@ import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-   
+   base:'/SakerOthmen',
   plugins: [react()],
-  base: '/SakerOthmen',
+  
   server: {
     host: true,
   },
